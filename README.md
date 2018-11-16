@@ -9,11 +9,11 @@
 
 `curl https://wt-e63b63f6cf3cc11e64f3e24f6f56b98a-0.sandbox.auth0-extend.com/getNews`
 
-For a more concise syntax, set the webtask url to a variable, like so:
+For a more concise syntax, set the webtask url to a variable, like so (Note: This variable won't persist after the shell is closed):
 
 `news="https://wt-e63b63f6cf3cc11e64f3e24f6f56b98a-0.sandbox.auth0-extend.com/getNews"`
 
-You can now call the endpoint like this (Note: This variable won't persist after the shell is closed):
+You can now call the endpoint like this:
 
 `curl $news`
 
