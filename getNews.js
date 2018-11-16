@@ -33,7 +33,8 @@ module.exports = (context, req, res) => {
         titleArr.push(data[i].title);
       }
       const table = new Table({
-        head: titleArr
+        head: titleArr,
+        colWidths: [68, 68]
       });
     
       const rowOne = [];
