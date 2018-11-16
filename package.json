@@ -1,0 +1,13 @@
+{
+  "name": "getnews",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JoshuaScript/getNews",
+  "author": "JoshuaScript",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "cli-table3": "^0.5.1",
+    "x-ray": "^2.3.3"
+  }
+}
