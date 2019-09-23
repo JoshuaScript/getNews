@@ -16,7 +16,6 @@ module.exports = (context, req, res) => {
       headlines: [ '.story-title | clean' ]
     }
   ])
-  .limit(3)
   .then(data => {
     const 
       head = []
@@ -28,7 +27,7 @@ module.exports = (context, req, res) => {
         colWidths: [ 68, 68 ]
       });
   
-    data.forEach(({ title , headlines: [ firstHeadline, secondHeadline, thirdHeadline ] }) => {
+    data.slice(0, 3).forEach(({ title , headlines: [ firstHeadline, secondHeadline, thirdHeadline ] }) => {
       head.push(title);
       rowOne.push(firstHeadline);
       rowTwo.push(secondHeadline);
