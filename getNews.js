@@ -37,6 +37,6 @@ module.exports = (context, req, res) => {
     table.push(rowOne, rowTwo, rowThree);
 
     res.setHeader('Content-Type', 'text/plain');
-    res.end(`Latest headlines from Reuters: \n ${String(table)}`);
+    res.end(`\n Latest headlines from Reuters: \n ${String(table)}`);
   });
 }
