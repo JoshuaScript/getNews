@@ -18,7 +18,7 @@ module.exports = (context, req, res) => {
   ])
   .then(data => {
     const 
-      head = []
+      head = [],
       rowOne = [],
       rowTwo = [],
       rowThree = [],
